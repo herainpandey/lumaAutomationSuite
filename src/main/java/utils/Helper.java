@@ -1,9 +1,6 @@
 package utils;
 
-import dev.failsafe.internal.util.Assert;
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
@@ -35,7 +32,7 @@ public class Helper {
     public static String getProperties(String data) throws IOException {
         String value ="";
          try{
-            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\testData.properties");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\testData.properties");
             Properties prop = new Properties();
             prop.load(fis);
             value =  prop.getProperty(data);

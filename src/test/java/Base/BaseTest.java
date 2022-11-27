@@ -1,10 +1,6 @@
 package Base;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,10 +15,7 @@ import static io.restassured.RestAssured.given;
 
 
 public class BaseTest{
-    public Logger LOGGER = LogManager.getLogger(this.getClass());
     protected static WebDriver driver;
-
-
 
     public WebDriver initializeBrowser(){
         WebDriverManager.chromedriver().setup();
@@ -38,7 +31,6 @@ public class BaseTest{
 
         Map<String, String> userMap = new HashMap<String, String>();;
         try {
-            LOGGER.info("Generating User Test Data");
             UserGenerator user = given().when().get("https://randomuser.me/api").then().extract().response().getBody().as(UserGenerator.class);
             userMap.put("firstName", user.getResults().get(0).getName().getFirst());
             userMap.put("lastName", user.getResults().get(0).getName().getLast());

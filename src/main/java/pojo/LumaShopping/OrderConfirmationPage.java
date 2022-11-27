@@ -1,18 +1,11 @@
 package pojo.LumaShopping;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import com.sun.media.jfxmedia.logging.Logger;
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import pojo.common.AbstractComponents;
-import utils.Helper;
-
-import javax.sound.midi.Soundbank;
-import java.io.IOException;
-import java.sql.SQLOutput;
 import java.time.Duration;
 
 public class OrderConfirmationPage extends AbstractComponents {

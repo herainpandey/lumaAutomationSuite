@@ -16,7 +16,6 @@ public class SearchGridPage extends MyAccountPage {
     @FindBy(xpath = "//ol[@class='products list items product-items']/li")
     private List<WebElement> itemList;
 
-
     public SearchGridPage(WebDriver driver){
         super(driver);
     }
