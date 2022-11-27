@@ -35,7 +35,7 @@ public class Helper {
     public static String getProperties(String data) throws IOException {
         String value ="";
          try{
-            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\utils\\testData.properties");
+            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\testData.properties");
             Properties prop = new Properties();
             prop.load(fis);
             value =  prop.getProperty(data);

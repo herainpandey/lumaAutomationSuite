@@ -21,6 +21,7 @@ public class MyAccountPage extends AbstractComponents {
     }
 
     public SearchGridPage search(String searchItem){
+        LOGGER.info("User is going to enter Item in Search box and Hit Enter");
         searchbar.sendKeys(searchItem);
         searchbar.sendKeys(Keys.ENTER);
         return new SearchGridPage(driver);

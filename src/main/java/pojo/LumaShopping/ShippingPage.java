@@ -5,9 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import pojo.common.AbstractComponents;
-import utils.Helper;
-
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -54,6 +51,7 @@ public class ShippingPage extends AbstractComponents {
     }
 
     public ShippingPage enterShippingDetails(Map<String, String> mshipdetail,String shippingMode){
+        LOGGER.info("Entering Shipment Details");
         company.sendKeys(mshipdetail.get("company"));
         street.sendKeys(mshipdetail.get("address"));
         city.sendKeys(mshipdetail.get("city"));
@@ -68,6 +66,7 @@ public class ShippingPage extends AbstractComponents {
     }
 
     public ReviewAndPaymentPage clickNextBtn(){
+        LOGGER.info("Click on Next Button to navigate to Review and Payment Page");
         nextBtn.click();
         return new ReviewAndPaymentPage(driver);
     }

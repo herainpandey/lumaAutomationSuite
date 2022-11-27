@@ -14,8 +14,6 @@ public class CreateAccountPage {
 
     public CreateAccountPage(WebDriver driver){
         this.driver = driver;
-        /*PageFactory.initElements(this.driver,SignInInformationPage.class);
-        PageFactory.initElements(this.driver,PersonalInformationPage.class);*/
     }
 
     public SignInInformationPage getSignInInformationPage(){

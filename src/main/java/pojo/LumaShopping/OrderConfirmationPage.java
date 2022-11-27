@@ -1,6 +1,7 @@
 package pojo.LumaShopping;
 
 import com.google.common.util.concurrent.Uninterruptibles;
+import com.sun.media.jfxmedia.logging.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,12 +30,13 @@ public class OrderConfirmationPage extends AbstractComponents {
     public void verifyOrdersuccess()  {
         Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(5));
         if(message.getText().equalsIgnoreCase("Thank you for your purchase!")){
-            System.out.println("=====================");
-            System.out.println(message.getText());
-            System.out.println(orderConfirmaion.getText());
-            System.out.println("=====================");
+            LOGGER.info("=====================");
+            LOGGER.info(message.getText());
+            LOGGER.info(orderConfirmaion.getText());
+            LOGGER.info("=====================");
+
         }else{
-            System.out.println("Order is not successful");
+            LOGGER.info("Order is not successful");
         }
     }
 

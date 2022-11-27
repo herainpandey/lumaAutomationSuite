@@ -28,9 +28,12 @@ public class ReviewAndPaymentPage extends AbstractComponents {
 
     public OrderConfirmationPage verifyOrderTotalAndPlaceOrder() throws IOException {
         if(orderTotal.getText().equalsIgnoreCase(Helper.getProperties("orderTotal"))){
+            LOGGER.info("Order Total is matched , Not click on Place Order Button");
+
             elementToClickJS(placeOrderBtn);
             return PageFactory.initElements(driver,OrderConfirmationPage.class);
         }
+        LOGGER.info("Order Total not expected");
         return null;
     }
 

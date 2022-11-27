@@ -36,6 +36,8 @@ public class ProductDetailPage extends AbstractComponents {
     }
 
     public ProductDetailPage selectSizeAndColor(String size, String color){
+
+        LOGGER.info("Selecting "+size+" and "+color+" from product link ");
         itemSizeList.stream().filter(element -> element.getText().equalsIgnoreCase(size)).forEach(element -> element.click());
 
         itemColorList.stream().filter(element ->element.getAttribute("option-label").equalsIgnoreCase(color))
@@ -49,7 +51,8 @@ public class ProductDetailPage extends AbstractComponents {
     }
 
 
-    public boolean isProductAdded(String product) throws IOException {
+    public boolean isProductAdded(String product) {
+        LOGGER.info("Verify success toast ");
         boolean flag= false;
         if(existsElement(successToast)){
             flag = successToast.getText().equalsIgnoreCase("You added "+product+" to your shopping cart.");
@@ -57,15 +60,17 @@ public class ProductDetailPage extends AbstractComponents {
         return flag;
     }
 
-    public ShippingPage goToCart(String product) throws IOException, InterruptedException {
+    public ShippingPage goToCart(String product) throws InterruptedException {
         boolean flag = isProductAdded(product);
         if(flag){
+            LOGGER.info("Clicking on Cart Button");
             cartBtn.click();
-            Thread.sleep(5000);
+            Thread.sleep(2000);
+            LOGGER.info("Clicking on Checkout Button ");
             checkoutBtn.click();
             return PageFactory.initElements(driver,ShippingPage.class);
         }
-
+        LOGGER.info("Element not added to Cart , Please check again");
         return null;
     }
 

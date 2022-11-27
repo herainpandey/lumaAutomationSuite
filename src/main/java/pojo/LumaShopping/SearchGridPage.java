@@ -31,6 +31,7 @@ public class SearchGridPage extends MyAccountPage {
 
     public ProductDetailPage selectProduct(String productName) throws IOException {
 
+        LOGGER.info("Selecting "+productName+" from product link ");
 
         itemList.stream().filter(element -> element.findElement(By.xpath("//ol[contains(@class,'product-items')]/li//strong/a"))
                     .getText().equalsIgnoreCase(productName)).findFirst().get().click();

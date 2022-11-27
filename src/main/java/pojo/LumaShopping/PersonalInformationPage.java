@@ -20,6 +20,7 @@ public class PersonalInformationPage extends AbstractComponents {
     }
 
     public void enterRegistrationInfo(Map<String,String> map){
+        LOGGER.info("User enters FirstName and LastName ");
         firstName.sendKeys(map.get("firstName"));
         lastName.sendKeys(map.get("lastName"));
     }
