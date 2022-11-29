@@ -16,7 +16,7 @@ public class LumaHomePage extends AbstractComponents {
     }
 
     public CreateAccountPage createUserAccount(){
-         LOGGER.info("User clicks on create account link");
+         log.info("User clicks on create account link");
          createAccount.click();
          return new CreateAccountPage(driver);
     }

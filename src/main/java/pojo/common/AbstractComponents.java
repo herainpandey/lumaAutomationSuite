@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public abstract class AbstractComponents {
 
-    protected final Logger LOGGER = LogManager.getLogger(this.getClass());
+    protected final Logger log = LogManager.getLogger(this.getClass());
 
     protected  static WebDriver driver;
     protected  static WebDriverWait wait;

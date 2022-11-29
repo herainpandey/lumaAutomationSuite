@@ -51,7 +51,7 @@ public class ShippingPage extends AbstractComponents {
     }
 
     public ShippingPage enterShippingDetails(Map<String, String> mshipdetail,String shippingMode){
-        LOGGER.info("Entering Shipment Details");
+        log.info("Entering Shipment Details");
         company.sendKeys(mshipdetail.get("company"));
         street.sendKeys(mshipdetail.get("address"));
         city.sendKeys(mshipdetail.get("city"));
@@ -66,7 +66,7 @@ public class ShippingPage extends AbstractComponents {
     }
 
     public ReviewAndPaymentPage clickNextBtn(){
-        LOGGER.info("Click on Next Button to navigate to Review and Payment Page");
+        log.info("Click on Next Button to navigate to Review and Payment Page");
         nextBtn.click();
         return new ReviewAndPaymentPage(driver);
     }

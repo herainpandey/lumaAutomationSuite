@@ -5,6 +5,7 @@ import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import pojo.common.AbstractComponents;
 import java.time.Duration;
 
@@ -23,13 +24,13 @@ public class OrderConfirmationPage extends AbstractComponents {
     public void verifyOrdersuccess()  {
         Uninterruptibles.sleepUninterruptibly(Duration.ofSeconds(5));
         if(message.getText().equalsIgnoreCase("Thank you for your purchase!")){
-            LOGGER.info("=====================");
-            LOGGER.info(message.getText());
-            LOGGER.info(orderConfirmaion.getText());
-            LOGGER.info("=====================");
+            log.info("=====================");
+            log.info(message.getText());
+            log.info(orderConfirmaion.getText());
+            log.info("=====================");
 
         }else{
-            LOGGER.info("Order is not successful");
+            Assert.fail("Order is not successful");
         }
     }
 

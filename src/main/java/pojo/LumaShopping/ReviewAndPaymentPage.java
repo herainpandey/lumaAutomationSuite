@@ -4,15 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import pojo.common.AbstractComponents;
-import utils.Helper;
-
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
+
 
 public class ReviewAndPaymentPage extends AbstractComponents {
 
@@ -26,14 +20,14 @@ public class ReviewAndPaymentPage extends AbstractComponents {
         super(driver);
     }
 
-    public OrderConfirmationPage verifyOrderTotalAndPlaceOrder() throws IOException {
-        if(orderTotal.getText().equalsIgnoreCase(Helper.getProperties("orderTotal"))){
-            LOGGER.info("Order Total is matched , Not click on Place Order Button");
+    public OrderConfirmationPage verifyOrderTotalAndPlaceOrder(String expectedTotal) throws IOException {
+        if(orderTotal.getText().equalsIgnoreCase(expectedTotal)){
+            log.info("Order Total is matched , Not click on Place Order Button");
 
             elementToClickJS(placeOrderBtn);
             return PageFactory.initElements(driver,OrderConfirmationPage.class);
         }
-        LOGGER.info("Order Total not expected");
+        log.info("Order Total not expected");
         return null;
     }
 

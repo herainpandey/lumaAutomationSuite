@@ -1,22 +1,23 @@
-package stepDefinitions;
+package backup;
 
 
-import Base.BaseTest;
+import utils.TestBase;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pojo.LumaShopping.*;
+
 import java.io.IOException;
 import java.util.Map;
 
-public class StepDefinition {
+public class BackupPageStepDefinition {
+/*
 
-    private BaseTest baseTest;
+    private TestBase testBase;
     private WebDriver driver;
     private Logger LOGGER = LogManager.getLogger(this.getClass());
     private Map<String,String> userInfo =null;
@@ -32,11 +33,11 @@ public class StepDefinition {
 
     @Before
     public void beforeScenario(){
-        baseTest= new BaseTest();
+        testBase = new TestBase();
         LOGGER.info("Initialize Browser incase not initiated");
         try{
             if(driver==null){
-                driver = baseTest.initializeBrowser();
+                driver = testBase.initializeBrowser();
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -51,7 +52,7 @@ public class StepDefinition {
     }
     @Given("Provide User information and create Account")
     public void provide_user_information_and_create_account()  throws InterruptedException {
-        userInfo = baseTest.userGenerator();
+        userInfo = testBase.userGenerator();
         createAccountPage.getPersonalInformationPage().enterRegistrationInfo(userInfo);
         myAccountPage = createAccountPage.getSignInInformationPage().enterUserPasswordAndRegister(userInfo);
         Assert.assertNotNull("Driver not initialized",myAccountPage);
@@ -96,4 +97,5 @@ public class StepDefinition {
     public void closeBrowser(){
         driver.quit();
     }
+*/
 }

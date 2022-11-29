@@ -29,7 +29,7 @@ public class SignInInformationPage extends AbstractComponents {
     }
 
     public MyAccountPage enterUserPasswordAndRegister(Map<String,String> map) throws InterruptedException {
-           LOGGER.info("User enters Email,Password, and retype Password to confirm ");
+           log.info("User enters Email,Password, and retype Password to confirm ");
         do{
             email.sendKeys(map.get("email"));
             password.sendKeys(map.get("password"));

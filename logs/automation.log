@@ -1,0 +1,49 @@
+21:54:14.583 [main] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+21:54:54.616 [main] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+21:57:55.542 [main] INFO  pojo.LumaShopping.LumaHomePage - User clicks on create account link
+21:57:57.143 [main] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+21:57:57.376 [main] INFO  pojo.LumaShopping.SignInInformationPage - User enters Email,Password, and retype Password to confirm 
+21:58:13.680 [main] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+21:58:15.778 [main] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+22:00:55.774 [main] INFO  pojo.LumaShopping.LumaHomePage - User clicks on create account link
+22:00:56.816 [main] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+22:00:57.048 [main] INFO  pojo.LumaShopping.SignInInformationPage - User enters Email,Password, and retype Password to confirm 
+22:01:12.098 [main] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+22:01:13.996 [main] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+22:01:15.694 [main] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+22:01:16.104 [main] INFO  pojo.LumaShopping.ProductDetailPage - Verify success toast 
+22:01:18.301 [main] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Cart Button
+22:01:20.350 [main] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Checkout Button 
+22:01:21.779 [main] INFO  pojo.LumaShopping.ShippingPage - Entering Shipment Details
+22:09:56.314 [main] INFO  pojo.LumaShopping.LumaHomePage - User clicks on create account link
+22:09:57.425 [main] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+22:09:57.719 [main] INFO  pojo.LumaShopping.SignInInformationPage - User enters Email,Password, and retype Password to confirm 
+22:10:12.870 [main] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+22:10:14.599 [main] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+22:10:16.563 [main] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+22:10:16.950 [main] INFO  pojo.LumaShopping.ProductDetailPage - Verify success toast 
+22:10:18.909 [main] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Cart Button
+22:10:20.961 [main] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Checkout Button 
+22:10:22.779 [main] INFO  pojo.LumaShopping.ShippingPage - Entering Shipment Details
+22:10:26.137 [main] INFO  pojo.LumaShopping.ShippingPage - Click on Next Button to navigate to Review and Payment Page
+22:10:27.581 [main] INFO  pojo.LumaShopping.ReviewAndPaymentPage - Order Total is matched , Not click on Place Order Button
+22:10:32.902 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - =====================
+22:10:32.916 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - Thank you for your purchase!
+22:10:32.938 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - Your order number is: 000008017.
+22:10:32.938 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - =====================
+22:27:32.621 [main] INFO  pojo.LumaShopping.LumaHomePage - User clicks on create account link
+22:27:33.814 [main] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+22:27:34.048 [main] INFO  pojo.LumaShopping.SignInInformationPage - User enters Email,Password, and retype Password to confirm 
+22:27:49.704 [main] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+22:27:51.582 [main] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+22:27:53.523 [main] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+22:27:54.002 [main] INFO  pojo.LumaShopping.ProductDetailPage - Verify success toast 
+22:27:55.901 [main] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Cart Button
+22:27:57.958 [main] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Checkout Button 
+22:27:59.405 [main] INFO  pojo.LumaShopping.ShippingPage - Entering Shipment Details
+22:28:03.219 [main] INFO  pojo.LumaShopping.ShippingPage - Click on Next Button to navigate to Review and Payment Page
+22:28:04.955 [main] INFO  pojo.LumaShopping.ReviewAndPaymentPage - Order Total is matched , Not click on Place Order Button
+22:28:10.588 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - =====================
+22:28:10.603 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - Thank you for your purchase!
+22:28:10.625 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - Your order number is: 000008022.
+22:28:10.625 [main] INFO  pojo.LumaShopping.OrderConfirmationPage - =====================
