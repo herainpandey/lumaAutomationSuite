@@ -1,9 +1,13 @@
 package pojo.LumaShopping;
 
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import pojo.common.AbstractComponents;
 import java.io.IOException;
 
@@ -18,6 +22,7 @@ public class ReviewAndPaymentPage extends AbstractComponents {
 
     public ReviewAndPaymentPage(WebDriver driver){
         super(driver);
+        waitForLoad(driver);
     }
 
     public OrderConfirmationPage verifyOrderTotalAndPlaceOrder(String expectedTotal) throws IOException {
@@ -27,7 +32,7 @@ public class ReviewAndPaymentPage extends AbstractComponents {
             elementToClickJS(placeOrderBtn);
             return PageFactory.initElements(driver,OrderConfirmationPage.class);
         }
-        log.info("Order Total not expected");
+        Assert.fail("Order Total not expected");
         return null;
     }
 

@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -29,9 +32,12 @@ public class SearchGridPage extends MyAccountPage {
 
         log.info("Selecting "+productName+" from product link ");
 
-        itemList.stream().filter(element -> element.findElement(By.xpath("//ol[contains(@class,'product-items')]/li//strong/a"))
+        try {
+            itemList.stream().filter(element -> element.findElement(By.xpath("//ol[contains(@class,'product-items')]/li//strong/a"))
                     .getText().equalsIgnoreCase(productName)).findFirst().get().click();
-
+        }catch (Exception e){
+            Assert.fail("Element not present");
+        }
         return PageFactory.initElements(driver,ProductDetailPage.class);
     }
 

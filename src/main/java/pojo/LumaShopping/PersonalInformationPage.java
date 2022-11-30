@@ -17,6 +17,7 @@ public class PersonalInformationPage extends AbstractComponents {
 
     public PersonalInformationPage(WebDriver driver){
         super(driver);
+
     }
 
     public void enterRegistrationInfo(Map<String,String> map){

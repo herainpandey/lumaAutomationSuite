@@ -1,15 +1,17 @@
 package utils;
 
+import org.openqa.selenium.WebDriver;
+
 public class ContextManager {
 
     public PageObjectManager pageObjectManager;
-    public TestBase testBase;
     public GenericUtils genericUtils;
+    public WebDriver driver;
 
     public ContextManager(){
-        testBase = new TestBase();
-        pageObjectManager = new PageObjectManager(testBase.webDriverManager());
-        genericUtils = new GenericUtils(testBase.webDriverManager());
+        driver= DriverFactory.getDriver();
+        pageObjectManager = new PageObjectManager(driver);
+        genericUtils = new GenericUtils(driver);
 
     }
 }

@@ -2,26 +2,21 @@ package stepDefinitions;
 
 
 import io.cucumber.java.en.Given;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import pojo.LumaShopping.LumaHomePage;
 import utils.ContextManager;
-
-import java.util.Map;
 
 public class LumaHomePageStepDefinition {
 
-    private Logger LOGGER = LogManager.getLogger(this.getClass());
+    LumaHomePage lumaHomePage;
     ContextManager contextManager;
 
    public LumaHomePageStepDefinition(ContextManager contextManager){
-    this.contextManager = contextManager;
+     this.contextManager = contextManager;
+     lumaHomePage = contextManager.pageObjectManager.getLumaHomePage();
    }
 
-    @Given("Launch Luma Site")
-    public void launch_luma_site() {
-        contextManager.testBase.webDriverManager().get("https://magento.softwaretestingboard.com/");
+    @Given("User is on Luma Home Page and Navigates to Create Account Page")
+    public void User_is_on_Luma_Home_Page_and_Navigates_to_Create_Account_Page() {
+        lumaHomePage.createUserAccount();
     }
 }

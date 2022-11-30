@@ -31,15 +31,20 @@ public class ProductDetailPage extends AbstractComponents {
 
     public ProductDetailPage(WebDriver driver){
         super(driver);
+
     }
 
     public ProductDetailPage selectSizeAndColor(String size, String color){
 
         log.info("Selecting "+size+" and "+color+" from product link ");
-        itemSizeList.stream().filter(element -> element.getText().equalsIgnoreCase(size)).forEach(element -> element.click());
+        try {
+            itemSizeList.stream().filter(element -> element.getText().equalsIgnoreCase(size)).forEach(element -> element.click());
 
-        itemColorList.stream().filter(element ->element.getAttribute("option-label").equalsIgnoreCase(color))
-                .forEach(element -> element.click());
+            itemColorList.stream().filter(element -> element.getAttribute("option-label").equalsIgnoreCase(color))
+                    .forEach(element -> element.click());
+        }catch (Exception e){
+            Assert.fail("Provided Size or Color not available");
+        }
         return this;
     }
 

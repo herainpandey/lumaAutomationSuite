@@ -1,8 +1,8 @@
 Feature: Purchase Online
 
-  @PlaceOrder
+  @Regression
   Scenario Outline: User able to purchase product online
-    Given Launch Luma Site
+    Given User is on Luma Home Page and Navigates to Create Account Page
     Then  Create User Account
     Then  Search product "<product>" via Search bar
     Then  Click on product "<productName>" and navigate to Product detail page
