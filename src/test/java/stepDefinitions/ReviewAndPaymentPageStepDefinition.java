@@ -18,7 +18,7 @@ public class ReviewAndPaymentPageStepDefinition {
     }
 
     @Then("Confirm order total and Place the Order")
-    public void confirm_order_total_and_place_the_order() throws IOException {
+    public void confirm_order_total_and_place_the_order() throws IOException, InterruptedException {
         reviewAndPaymentPage.verifyOrderTotalAndPlaceOrder(contextManager.genericUtils.getProperties("orderTotal"));
     }
 
