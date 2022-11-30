@@ -9,8 +9,6 @@ import utils.ContextManager;
 
 public class ShippingPageStepDefinition {
 
-
-    private Logger LOGGER = LogManager.getLogger(this.getClass());
     ContextManager contextManager;
     ShippingPage shippingPage;
 
