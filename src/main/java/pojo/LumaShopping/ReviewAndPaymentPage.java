@@ -22,7 +22,6 @@ public class ReviewAndPaymentPage extends AbstractComponents {
 
     public ReviewAndPaymentPage(WebDriver driver){
         super(driver);
-        waitForLoad(driver);
     }
 
     public OrderConfirmationPage verifyOrderTotalAndPlaceOrder(String expectedTotal) throws IOException {
