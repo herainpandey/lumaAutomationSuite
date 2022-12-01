@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
 
 <build>
@@ -133,19 +135,25 @@
   <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.9.0</version>
+    <version>7.6.0</version>
   </dependency>
   <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
   <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-picocontainer</artifactId>
-    <version>7.9.0</version>
+    <version>7.3.4</version>
   </dependency>
   <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
   <dependency>
     <groupId>tech.grasshopper</groupId>
     <artifactId>extentreports-cucumber7-adapter</artifactId>
     <version>1.9.2</version>
+  </dependency>
+  <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.0</version>
+    <scope>compile</scope>
   </dependency>
 
 </dependencies>

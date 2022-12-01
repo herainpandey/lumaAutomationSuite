@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="HERAIN" name="io.cucumber.testng.AbstractTestNGCucumberTests" tests="2" failures="1" timestamp="1 Dec 2022 02:45:35 GMT" time="18.388" errors="0">
+  <testcase name="runScenario" time="11.589" classname="Options.TestRunner">
+    <failure type="java.lang.AssertionError" message="Element not present">
+      <![CDATA[java.lang.AssertionError: Element not present
+	at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
+	at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
+	at ✽.Click on product "Adrienne Trek Jackets" and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
+... Removed 1 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="runScenario" time="15.274" classname="Options.TestRunner"/>
+</testsuite>

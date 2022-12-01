@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="1" name="Options.TestRunner" time="26.872" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
+    <property name="java.vm.version" value="25.281-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\AVITA\Desktop\Automation\lumaAutomationSuite"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\AVITA\Desktop\Automation\lumaAutomationSuite"/>
+    <property name="java.runtime.version" value="1.8.0_281-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\AVITA\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_281\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_281\bin;D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\AVITA\AppData\Local\Android\Sdk\tools\bin;C:\Users\AVITA\AppData\Local\Android\Sdk\tools;C:\Users\AVITA\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Selenium;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\AVITA\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\AVITA\GitHubDesktop\bin;C:\Users\AVITA\AppData\Local\GitHubDesktop\bin;D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Users\AVITA\AppData\Roaming\npm;;."/>
+    <property name="maven.conf" value="D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\AVITA"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="AVITA"/>
+    <property name="java.class.path" value="D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_281"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Options.TestRunner" name="runScenario" time="11.598">
+    <failure message="Element not present" type="java.lang.AssertionError">java.lang.AssertionError: Element not present
+	at org.testng.Assert.fail(Assert.java:89)
+	at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
+	at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
+	at ✽.Click on product &quot;Adrienne Trek Jackets&quot; and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@161cd475
+
+@Sanity
+Scenario Outline: User able to purchase product online                              # src/test/java/features/searchProduct.feature:24
+
+@Sanity
+Scenario Outline: User able to purchase product online                             # src/test/java/features/searchProduct.feature:12
+08:15:26.552 [pool-1-thread-2] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:15:27.459 [pool-1-thread-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+  Then Search product &quot;jacket&quot; via Search bar                                       # stepDefinitions.MyAccountPageStepDefinition.search_product_via_search_bar(java.lang.String)
+08:15:28.267 [pool-1-thread-2] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+  Then Search product &quot;jacket&quot; via Search bar                                      # stepDefinitions.MyAccountPageStepDefinition.search_product_via_search_bar(java.lang.String)
+08:15:28.655 [pool-1-thread-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+  Then Click on product &quot;Adrienne Trek Jackets&quot; and navigate to Product detail page # stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(java.lang.String)
+      java.lang.AssertionError: Element not present
+	at org.testng.Assert.fail(Assert.java:89)
+	at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
+	at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
+	at âœ½.Click on product &quot;Adrienne Trek Jackets&quot; and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
+
+
+    Embedding User able to purchase product online_0.05461577972210174 [image/png 94629 bytes]
+
+  When Select Size &quot;M&quot; and Color &quot;Orange&quot; and go to cart page                       # stepDefinitions.ProductDetailPageStepDefinition.select_size_and_color_and_go_to_cart_page(java.lang.String,java.lang.String)
+</system-out>
+    <system-err>SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 30578
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 34099
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+</system-err>
+  </testcase>
+  <testcase classname="Options.TestRunner" name="runScenario" time="15.274"/>
+</testsuite>
