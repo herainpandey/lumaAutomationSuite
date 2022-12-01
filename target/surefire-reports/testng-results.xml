@@ -1,39 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Options.TestRunner" duration-ms="18388" started-at="2022-12-01T08:15:16Z" finished-at="2022-12-01T08:15:35Z">
+  <suite name="Options.TestRunner" duration-ms="13644" started-at="2022-12-01T08:57:06 IST" finished-at="2022-12-01T08:57:20 IST">
     <groups>
       <group name="cucumber">
-        <method signature="io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Options.TestRunner@75881071]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Command line test" duration-ms="18388" started-at="2022-12-01T08:15:16Z" finished-at="2022-12-01T08:15:35Z">
+    <test name="Command line test" duration-ms="13644" started-at="2022-12-01T08:57:06 IST" finished-at="2022-12-01T08:57:20 IST">
       <class name="Options.TestRunner">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)" name="setUpClass" is-config="true" duration-ms="1224" started-at="2022-12-01T08:15:16Z" finished-at="2022-12-01T08:15:18Z">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Options.TestRunner@75881071]" name="setUpClass" is-config="true" duration-ms="866" started-at="2022-12-01T08:57:06 IST" finished-at="2022-12-01T08:57:07 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@792bbc74]]>
+                <![CDATA[org.testng.TestRunner@72bd06ca]]>
               </value>
             </param>
           </params>
-        </test-method>
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)" name="runScenario" duration-ms="15274" started-at="2022-12-01T08:15:18Z" description="Runs Cucumber Scenarios" finished-at="2022-12-01T08:15:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User able to purchase product online"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search Product Online"]]>
-              </value>
-            </param>
-          </params>
-        </test-method>
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)" name="runScenario" duration-ms="11589" started-at="2022-12-01T08:15:18Z" description="Runs Cucumber Scenarios" finished-at="2022-12-01T08:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Options.TestRunner@75881071]" name="runScenario" duration-ms="11437" started-at="2022-12-01T08:57:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-01T08:57:19 IST">
           <params>
             <param index="0">
               <value>
@@ -52,17 +40,37 @@
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Element not present
-	at org.testng.Assert.fail(Assert.java:89)
-	at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
-	at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
-	at ✽.Click on product "Adrienne Trek Jackets" and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
+at org.testng.Assert.fail(Assert.java:110)
+at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
+at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
+at ✽.Click on product "Adrienne Trek Jackets" and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
 ]]>
             </full-stacktrace>
-          </exception>
-        </test-method>
-        <test-method status="PASS" signature="tearDownClass()" name="tearDownClass" is-config="true" duration-ms="1013" started-at="2022-12-01T08:15:34Z" finished-at="2022-12-01T08:15:35Z">
-        </test-method>
-      </class>
-    </test>
-  </suite>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Options.TestRunner@75881071]" name="runScenario" duration-ms="12313" started-at="2022-12-01T08:57:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-01T08:57:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User able to purchase product online"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Product Online"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Options.TestRunner@75881071]" name="tearDownClass" is-config="true" duration-ms="429" started-at="2022-12-01T08:57:19 IST" finished-at="2022-12-01T08:57:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Options.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Options.TestRunner -->
 </testng-results>

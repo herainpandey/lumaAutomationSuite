@@ -33,3 +33,18 @@
 08:15:28.267 [pool-1-thread-2] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
 08:15:28.655 [pool-1-thread-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
 08:15:31.768 [pool-1-thread-1] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+08:18:09.721 [pool-1-thread-2] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:18:10.090 [pool-1-thread-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:18:11.389 [pool-1-thread-2] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+08:18:11.721 [pool-1-thread-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+08:18:14.161 [pool-1-thread-1] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+08:57:15.584 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:57:15.654 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:57:17.079 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+08:57:17.445 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+08:57:18.821 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+08:58:16.969 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:58:17.115 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+08:58:18.325 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+08:58:18.618 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+08:58:20.174 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 

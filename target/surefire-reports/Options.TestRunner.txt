@@ -1,10 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: Options.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 18.748 sec <<< FAILURE!
-runScenario(Options.TestRunner)  Time elapsed: 11.598 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.305 sec <<< FAILURE!
+runScenario(Options.TestRunner)  Time elapsed: 11.443 sec  <<< FAILURE!
 java.lang.AssertionError: Element not present
-	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.fail(Assert.java:110)
 	at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
 	at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
 	at ?.Click on product "Adrienne Trek Jackets" and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
