@@ -48,3 +48,39 @@
 08:58:18.325 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
 08:58:18.618 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
 08:58:20.174 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+09:03:23.252 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:03:23.252 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:03:24.360 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+09:03:24.629 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+09:03:25.798 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+09:19:43.983 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:19:44.654 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:19:45.734 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+09:19:46.236 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+09:19:46.706 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+09:20:25.554 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:20:27.093 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:20:27.317 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+09:20:28.637 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+09:20:29.107 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+09:21:50.531 [TestNG-PoolService-0] INFO  pojo.LumaShopping.LumaHomePage - User clicks on create account link
+09:21:50.531 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:21:51.570 [TestNG-PoolService-2] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:21:52.760 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+09:21:53.530 [TestNG-PoolService-2] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+09:21:54.192 [TestNG-PoolService-1] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+09:21:56.593 [TestNG-PoolService-0] INFO  pojo.LumaShopping.PersonalInformationPage - User enters FirstName and LastName 
+09:21:56.720 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SignInInformationPage - User enters Email,Password, and retype Password to confirm 
+09:22:41.582 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:22:43.295 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+09:22:44.688 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+09:22:44.962 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Verify success toast 
+09:22:47.290 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Cart Button
+09:22:49.350 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Clicking on Checkout Button 
+09:22:50.796 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ShippingPage - Entering Shipment Details
+09:22:53.756 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ShippingPage - Click on Next Button to navigate to Review and Payment Page
+09:22:55.290 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ReviewAndPaymentPage - Order Total is matched , Not click on Place Order Button
+09:23:00.655 [TestNG-PoolService-0] INFO  pojo.LumaShopping.OrderConfirmationPage - =====================
+09:23:00.674 [TestNG-PoolService-0] INFO  pojo.LumaShopping.OrderConfirmationPage - Thank you for your purchase!
+09:23:00.699 [TestNG-PoolService-0] INFO  pojo.LumaShopping.OrderConfirmationPage - Your order number is: 000008181.
+09:23:00.699 [TestNG-PoolService-0] INFO  pojo.LumaShopping.OrderConfirmationPage - =====================

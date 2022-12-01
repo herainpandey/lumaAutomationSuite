@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="Options.TestRunner" time="23.756" errors="0" skipped="0">
+<testsuite tests="3" failures="1" name="Options.TestRunner" time="106.981" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
     <property name="java.vm.version" value="25.281-b09"/>
+    <property name="browser" value="chrome"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\AVITA\Desktop\Automation\lumaAutomationSuite"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -41,12 +42,13 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="Cp1252"/>
+    <property name="cucumber.filter.tags" value="@Sanity or @Regression"/>
     <property name="user.name" value="AVITA"/>
     <property name="java.class.path" value="D:\Automation\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.filter.tags=@Sanity or @Regression -Dbrowser=chrome"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,7 +67,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Options.TestRunner" name="runScenario" time="11.443">
+  <testcase classname="Options.TestRunner" name="runScenario" time="13.398">
     <failure message="Element not present" type="java.lang.AssertionError">java.lang.AssertionError: Element not present
 	at org.testng.Assert.fail(Assert.java:110)
 	at pojo.LumaShopping.SearchGridPage.selectProduct(SearchGridPage.java:39)
@@ -74,17 +76,23 @@
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@5d624da6
 
-@Sanity
-Scenario Outline: User able to purchase product online                              # src/test/java/features/searchProduct.feature:24
+@Regression
+Scenario Outline: User able to purchase product online                                 # src/test/java/features/onlineShopping.feature:18
 
 @Sanity
 Scenario Outline: User able to purchase product online                             # src/test/java/features/searchProduct.feature:12
-08:57:15.584 [TestNG-PoolService-0] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
-08:57:15.654 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+
+@Sanity
+Scenario Outline: User able to purchase product online                              # src/test/java/features/searchProduct.feature:24
+09:21:50.531 [TestNG-PoolService-0] INFO  pojo.LumaShopping.LumaHomePage - User clicks on create account link
+09:21:50.531 [TestNG-PoolService-1] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+09:21:51.570 [TestNG-PoolService-2] INFO  pojo.LumaShopping.MyAccountPage - User is going to enter Item in Search box and Hit Enter
+  Given User is on Luma Home Page and Navigates to Create Account Page                 # stepDefinitions.LumaHomePageStepDefinition.User_is_on_Luma_Home_Page_and_Navigates_to_Create_Account_Page()
+Generating user data
   Then Search product &quot;jacket&quot; via Search bar                                      # stepDefinitions.MyAccountPageStepDefinition.search_product_via_search_bar(java.lang.String)
-08:57:17.079 [TestNG-PoolService-0] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
+09:21:52.760 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jacket from product link 
   Then Search product &quot;jacket&quot; via Search bar                                       # stepDefinitions.MyAccountPageStepDefinition.search_product_via_search_bar(java.lang.String)
-08:57:17.445 [TestNG-PoolService-1] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
+09:21:53.530 [TestNG-PoolService-2] INFO  pojo.LumaShopping.SearchGridPage - Selecting Adrienne Trek Jackets from product link 
   Then Click on product &quot;Adrienne Trek Jackets&quot; and navigate to Product detail page # stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(java.lang.String)
       java.lang.AssertionError: Element not present
 	at org.testng.Assert.fail(Assert.java:110)
@@ -92,25 +100,31 @@ Scenario Outline: User able to purchase product online                          
 	at stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(SearchGridPageStepDefinition.java:24)
 	at âœ½.Click on product &quot;Adrienne Trek Jackets&quot; and navigate to Product detail page(file:///C:/Users/AVITA/Desktop/Automation/lumaAutomationSuite/src/test/java/features/searchProduct.feature:18)
 
+  Then Click on product &quot;Adrienne Trek Jacket&quot; and navigate to Product detail page # stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(java.lang.String)
+09:21:54.192 [TestNG-PoolService-1] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
 
-    Embedding User able to purchase product online_0.2818900624105316 [image/png 94629 bytes]
+    Embedding User able to purchase product online_0.10094372475882807 [image/png 94629 bytes]
 
   When Select Size &quot;M&quot; and Color &quot;Orange&quot; and go to cart page                       # stepDefinitions.ProductDetailPageStepDefinition.select_size_and_color_and_go_to_cart_page(java.lang.String,java.lang.String)
-  Then Click on product &quot;Adrienne Trek Jacket&quot; and navigate to Product detail page # stepDefinitions.SearchGridPageStepDefinition.click_on_product_and_navigate_to_product_detail_page(java.lang.String)
-08:57:18.821 [TestNG-PoolService-0] INFO  pojo.LumaShopping.ProductDetailPage - Selecting L and Orange from product link 
+  When Select Size &quot;L&quot; and Color &quot;Orange&quot; and go to cart page                      # stepDefinitions.ProductDetailPageStepDefinition.select_size_and_color_and_go_to_cart_page(java.lang.String,java.lang.String)
 </system-out>
     <system-err>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromStaeDrting ChromeDririver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 2938
-Only lver 107.0.5304.62 (1eeocal connecc40d3a5764881tc92085aaeei66d25075c159aa-ons rare allowedefs/branch-h.
-Pleeads/a5304@{#942}) on port 6630
-Only local connections saer seee  https://chromedriver.chromium.org/security-conasiderlaltowiedo.
-Please see htns fortp s:/s/chromedruiver.chromium.org/security-consideratgions for suggesgtiones on keeping ChromeDrivsetionr ssafe.
- on keeping ChromeDriver safe.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 16989
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 46053
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 1502
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
 ChromeDriver was started successfully.
 ChromeDriver was started successfully.
 </system-err>
   </testcase>
-  <testcase classname="Options.TestRunner" name="runScenario" time="12.313"/>
+  <testcase classname="Options.TestRunner" name="runScenario" time="13.99"/>
+  <testcase classname="Options.TestRunner" name="runScenario" time="79.593"/>
 </testsuite>
